@@ -1,0 +1,19 @@
+{
+  "name": "com.codeavr.unity-random-extensions",
+  "displayName": "Unity Random Extensions",
+  "description": "Useful unity random extensions",
+  "version": "0.0.1",
+  "unity": "2019.3",
+  "license": "MIT",
+  "keywords": [
+    "random",
+    "extensions",
+    "unity"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Codeavr/UnityRandomExtensions.git"
+  },
+  "author": "Codeavr <codeavr@ya.ru> (https://github.com/Codeavr)",
+  "dependencies": {}
+}
