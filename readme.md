@@ -10,7 +10,7 @@ Unity Random Extensions
   ```c#
   var items = new [] { "general", "there", "hello", "kenobi" };
 
-  var randomized = items.RandomizedWithoutRepeats(10);
+  var randomized = RandomUtils.GenerateNonRepeatingRandomArray(items, 10);
 
   print(string.Join(", ", randomized)); // general, kenobi, there, kenobi, hello, there, general, kenobi, hello, there
   ```
@@ -23,10 +23,10 @@ Unity Random Extensions
   var weights3 = new float[] { 1, 0, 0, 0 };
   var weights4 = new float[] { 0, 0, 0, 1 };
 
-  print(items.GetWeightedRandomElement(weights1)); // hello
-  print(items.GetWeightedRandomElement(weights2)); // there
-  print(items.GetWeightedRandomElement(weights3)); // general
-  print(items.GetWeightedRandomElement(weights4)); // kenobi
+  print(RandomUtils.GetWeightedRandomElement(items, weights1)); // hello
+  print(RandomUtils.GetWeightedRandomElement(items, weights2)); // there
+  print(RandomUtils.GetWeightedRandomElement(items, weights3)); // general
+  print(RandomUtils.GetWeightedRandomElement(items, weights4)); // kenobi
   ```
 
 
