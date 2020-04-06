@@ -44,7 +44,7 @@ namespace Codeavr.RandomExtensions
         /// <param name="array">Original array</param>
         /// <param name="length">Array size</param>
         /// <exception cref="System.ArgumentOutOfRangeException"></exception>
-        public static T[] GenerateNonRepeatingRandomArray<T>(T[] array, int length) where T : class
+        public static T[] GenerateNonRepeatingRandomArray<T>(T[] array, int length)
         {
             if (length < 2)
             {
@@ -65,8 +65,8 @@ namespace Codeavr.RandomExtensions
                 do
                 {
                     randomArray[i] = array.PickRandom();
-                } while (randomArray[i] == randomArray[i - 1] ||
-                         randomArray[i] == randomArray[(i + 1) % randomArray.Length]);
+                } while (randomArray[i].Equals(randomArray[i - 1]) ||
+                         randomArray[i].Equals(randomArray[(i + 1) % randomArray.Length]));
             }
 
             return randomArray;
