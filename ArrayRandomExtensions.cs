@@ -1,4 +1,3 @@
-using System.Linq;
 using UnityEngine;
 
 namespace Codeavr.RandomExtensions
@@ -20,7 +19,5 @@ namespace Codeavr.RandomExtensions
 
             return array[randomIndex];
         }
-
-        
     }
 }
